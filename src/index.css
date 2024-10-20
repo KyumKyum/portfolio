@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+	min-width: 400px;
+	margin: 0 auto;
+}
+
+@font-face {
+	font-family: "FS";
+	src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/FlightSans-Title.woff2")
+		format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Flight";
+	src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/FlightSans-Bold.woff2")
+		format("woff2");
+	font-weight: 700;
+	font-style: normal;
+}
