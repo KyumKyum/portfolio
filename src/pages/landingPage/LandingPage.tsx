@@ -1,9 +1,12 @@
+import OnePageScrollComponent from "../../components/OnePageScrollComponent";
 import Introduction from "./components/Introduction";
 
 function LandingPage() {
 	return (
-		<div>
-			<Introduction />
+		<div className="wrapper">
+			<OnePageScrollComponent
+				componentList={[<Introduction key={"introduction"} />]}
+			/>
 		</div>
 	);
 }
