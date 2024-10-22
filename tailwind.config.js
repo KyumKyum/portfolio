@@ -6,6 +6,7 @@ export default {
 			fontFamily: {
 				FS: "FS",
 				Flight: "Flight",
+				Suit: "Suit",
 			},
 		},
 		keyframes: {
