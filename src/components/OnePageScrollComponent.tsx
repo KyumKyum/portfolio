@@ -16,8 +16,6 @@ function OnePageScrollComponent({ componentList }: OnePageScrollComponentProps) 
             const top = wrapperRef.current?.scrollTop || 0;
             const pageHeight = window.innerHeight;
             if (deltaY > 0) {
-                console.log(deltaY, top, pageHeight)
-                console.log(pageHeight * (Math.floor(top / pageHeight) + 1))
                 wrapperRef.current?.scrollTo({
                     top: pageHeight * (Math.floor(top / pageHeight) + 1),
                     behavior: "smooth"

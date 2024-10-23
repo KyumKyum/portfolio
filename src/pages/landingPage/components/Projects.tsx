@@ -3,6 +3,11 @@ import ProjectTags from "../constants/ProjectTags";
 import Mohey from "../../../assets/mohey.png"
 import Holme from "../../../assets/holme.png"
 import Zkrypto from "../../../assets/zkrypto.png"
+import Honsool from "../../../assets/honsool.png"
+import Character from "../../../assets/character.png"
+import Niscord from "../../../assets/niscord.png"
+import Myself from "../../../assets/myself.jpg"
+import SimpleProjectCard from "./SimpleProjectCard";
 
 function Projects() {
     return (
@@ -10,7 +15,7 @@ function Projects() {
             <span className="w-full text-center text-4xl font-FS text-white my-10">
                 Let Me Introduce My Projects & Works!
             </span>
-            <div className="flex flex-wrap justify-center gap-6">
+            <div className="flex flex-wrap justify-center gap-6 mb-10">
                 <ProjectCard cardImageUrl={Mohey} title="Mohey (모헤이)" description={"외국인 유학생들과 한국인 대학생들을 대상으로 한 창업 활동"} tags={[
                     ProjectTags.FullStack,
                     ProjectTags.DevOps,
@@ -31,9 +36,12 @@ function Projects() {
                     ProjectTags.MSA,
                     ProjectTags.Traffics
                 ]} />
-                {/* <ProjectCard />
-                <ProjectCard />
-                <ProjectCard /> */}
+            </div>
+            <div className="flex flex-wrap justify-center gap-6">
+                <SimpleProjectCard cardImageUrl={Honsool} title="혼술라이프" description="게시물 업로드와 랭킹 시스템을 구현한 있는 간단한 앱 서비스" cb={() => { window.open("https://github.com/KyumKyum/FORIF-2020-1-Hackathon", "_blank") }} />
+                <SimpleProjectCard cardImageUrl={Character} title="전투적 다이어트!" description="음식들을 피해 다이어트를 성공하는 탄막 슈팅 게임" cb={() => { window.open("https://github.com/KyumKyum/forif-2019-2-unity-hackathon", "_blank") }} />
+                <SimpleProjectCard cardImageUrl={Niscord} title="Niscord" description="Discord와 같이 실시간 채팅, 실시간 P2P 화상통화를 구현한 서비스" cb={() => { window.open("https://github.com/orgs/Niscord/repositories", "_blank") }} />
+                <SimpleProjectCard cardImageUrl={Myself} title="Gamechatban" description="게임 채팅을 학습하여 채팅의 유독성을 측정하는 머신 러닝 모델" cb={() => { window.open("https://kyumkyum.github.io/gamechatban.github.io/", "_blank") }} />
             </div>
         </div>
     )
