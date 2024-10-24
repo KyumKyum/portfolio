@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import ProjectTags from "../constants/ProjectTags";
+import ProjectTags from "../constants/Tags";
 import Mohey from "../../../assets/mohey.png"
 import Holme from "../../../assets/holme.png"
 import Zkrypto from "../../../assets/zkrypto.png"

@@ -24,7 +24,7 @@ function ProjectCard({ cardImageUrl, title, description, tags }: ProjectCardProp
                 <div className="flex flex-wrap gap-y-1">
                     {_.map(tags, (tag) => {
                         return (
-                            <span key={tag.name} className={cls("text-[10px] px-[6px] mx-1 rounded-sm text-white font-bold shadow-lg bg-stone-700")}>{tag.name}</span>
+                            <span key={tag.name} className={cls("text-[10px] px-[6px] mx-1 rounded-sm shadow-lg", `${tag.bgColor} ${tag.textColor}`)}>{tag.name}</span>
                         )
                     })}
                 </div>

@@ -1,6 +1,7 @@
 interface TagProps {
 	name: string;
-	color: string;
+	bgColor: string;
+	textColor: string;
 }
 
 export default TagProps;
