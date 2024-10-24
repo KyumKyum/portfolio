@@ -1,4 +1,4 @@
 export interface WordsProps {
-    word: string,
-    color: string
+    word: string;
+    color: string;
 }

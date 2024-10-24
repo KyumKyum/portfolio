@@ -3,30 +3,35 @@
 @tailwind utilities;
 
 #root {
-	min-width: 400px;
-	margin: 0 auto;
+    min-width: 1280px;
+    margin: 0 auto;
 }
 
 @font-face {
-	font-family: "FS";
-	src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/FlightSans-Title.woff2")
-		format("woff2");
-	font-weight: normal;
-	font-style: normal;
+    font-family: "FS";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/FlightSans-Title.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: "Flight";
-	src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/FlightSans-Bold.woff2")
-		format("woff2");
-	font-weight: 700;
-	font-style: normal;
+    font-family: "Flight";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/FlightSans-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: "Suit";
-	src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
-		format("woff2");
-	font-weight: normal;
-	font-style: normal;
+    font-family: "Suit";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GW";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
 }

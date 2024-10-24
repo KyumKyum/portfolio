@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { cls } from "../utils/cls";
-import type { WordsProps } from "../pages/landingPage/interfaces/WordProps";
+import { useEffect, useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { cls } from '../utils/cls';
+import type { WordsProps } from '../pages/landingPage/interfaces/WordProps';
 
 interface ScrollingTextProps {
-    className?: string,
-    scrollClassName?: string,
-    frontText?: string,
-    backText?: string
-    words: WordsProps[]
+    className?: string;
+    scrollClassName?: string;
+    frontText?: string;
+    backText?: string;
+    words: WordsProps[];
 }
 
 function ScrollingText({ className, scrollClassName, frontText, backText, words }: ScrollingTextProps) {
@@ -33,7 +33,7 @@ function ScrollingText({ className, scrollClassName, frontText, backText, words 
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -30 }}
                         transition={{ duration: 0.08 }}
-                        className={cls("inline-block", scrollClassName, className, words[index].color)}
+                        className={cls('inline-block', scrollClassName, className, words[index].color)}
                     >
                         {words[index].word}
                     </motion.h1>

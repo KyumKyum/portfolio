@@ -1,16 +1,20 @@
-import _ from "lodash";
+import _ from 'lodash';
 
 interface SimpleProjectCardProps {
-    cardImageUrl?: string,
-    title?: string,
-    description?: string
-    cb?: () => void
+    cardImageUrl?: string;
+    title?: string;
+    description?: string;
+    cb?: () => void;
 }
 
 function SimpleProjectCard({ cardImageUrl, title, description, cb }: SimpleProjectCardProps) {
     return (
-        <button type="button" className="transition ease-in-out delay-150 flex w-[200px] h-[120px] bg-stone-100 shadow-sm rounded-lg hover:scale-110" onClick={cb}>
-            <div className={"flex justify-center items-center w-2/6 bg-white rounded-l-lg"}>
+        <button
+            type="button"
+            className="transition ease-in-out delay-150 flex w-[200px] h-[120px] bg-stone-100 shadow-sm rounded-lg hover:scale-110"
+            onClick={cb}
+        >
+            <div className={'flex justify-center items-center w-2/6 bg-white rounded-l-lg'}>
                 <img src={cardImageUrl} alt="banner" className="w-2/3 h-2/3 object-contain rounded-l-lg" />
             </div>
             <div className="w-4/6 flex flex-col justify-around p-4">
@@ -20,7 +24,7 @@ function SimpleProjectCard({ cardImageUrl, title, description, cb }: SimpleProje
                 </div>
             </div>
         </button>
-    )
+    );
 }
 
 export default SimpleProjectCard;

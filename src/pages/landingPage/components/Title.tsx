@@ -1,10 +1,9 @@
-import { motion } from 'framer-motion'
-import ScrollingText from "../../../components/ScrollingText";
-import IntroductionWords from "../constants/IntroductionTexts";
-import Arrow from "../../../assets/arrow.svg?react"
-import Background from '../../../assets/background.png'
+import { motion } from 'framer-motion';
+import ScrollingText from '../../../components/ScrollingText';
+import IntroductionWords from '../constants/IntroductionTexts';
+import Arrow from '../../../assets/arrow.svg?react';
+import Background from '../../../assets/background.png';
 import BouncingComponent from '../../../components/BouncingComponent';
-
 
 function Title() {
     return (
@@ -20,9 +19,7 @@ function Title() {
                     transition={{ duration: 0.5 }}
                     className="absolute top-0 left-0 object-cover z-0"
                 />
-                <p className="text-6xl text-black font-FS z-10">
-                    Hello There! 저는
-                </p>
+                <p className="text-6xl text-black font-FS z-10">Hello There! 저는</p>
                 <ScrollingText
                     className="text-6xl text-black font-FS z-10"
                     words={IntroductionWords}
@@ -30,9 +27,7 @@ function Title() {
                 />
             </div>
             <div className="flex flex-col justify-center items-center text-lg font-Suit font-bold text-black mb-5">
-                <p>
-                    개발을 좋아하는 개발자, 임규민의 포트폴리오
-                </p>
+                <p>개발을 좋아하는 개발자, 임규민의 포트폴리오</p>
             </div>
             <BouncingComponent>
                 <Arrow width={30} height={30} stroke="#000000" fill="#000000" />
