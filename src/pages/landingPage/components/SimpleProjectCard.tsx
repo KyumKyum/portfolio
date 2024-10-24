@@ -9,7 +9,7 @@ interface SimpleProjectCardProps {
 
 function SimpleProjectCard({ cardImageUrl, title, description, cb }: SimpleProjectCardProps) {
     return (
-        <button type="button" className="transition ease-in-out delay-150 flex w-[200px] h-[120px] bg-stone-300 shadow-sm rounded-lg hover:scale-110" onClick={cb}>
+        <button type="button" className="transition ease-in-out delay-150 flex w-[200px] h-[120px] bg-stone-100 shadow-sm rounded-lg hover:scale-110" onClick={cb}>
             <div className={"flex justify-center items-center w-2/6 bg-white rounded-l-lg"}>
                 <img src={cardImageUrl} alt="banner" className="w-2/3 h-2/3 object-contain rounded-l-lg" />
             </div>

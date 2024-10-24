@@ -3,8 +3,8 @@ import SkillCard from "./SkillCard";
 function Skills() {
     return (
         <div className="flex h-screen flex-col justify-center items-center bg-stone-800">
-            <span className="w-full text-center text-4xl font-FS text-white my-10">
-                Introducing, My Tech Stacks!
+            <span className="w-full text-center text-5xl font-FS text-white my-10">
+                Tech Stacks
             </span>
             <div className="flex flex-wrap justify-center gap-6 mb-10">
                 <SkillCard title="Languages" description="제가 개발할 때 즐겨 사용하는 언어입니다." tags={[
@@ -20,7 +20,6 @@ function Skills() {
                 ]} />
                 <SkillCard title="Application" description="모바일/데스크톱 앱 개발 시 사용하는 프레임워크입니다." tags={[
                     { name: "React Native", bgColor: "bg-[#61DAF8]", textColor: "text-black" },
-                    { name: "Tauri", bgColor: "bg-[#24C8D8]", textColor: "text-black" },
                     { name: "Android Native", bgColor: "bg-[#A4C639]", textColor: "text-black" },
                     { name: "Electron", bgColor: "bg-[#0881D1]", textColor: "text-white" },
                 ]} />
@@ -50,7 +49,7 @@ function Skills() {
                     { name: "Grpc", bgColor: "bg-[#244B5A]", textColor: "text-white" },
                     { name: "RabbitMQ", bgColor: "bg-[#FF6600]", textColor: "text-black" },
                 ]} />
-                <SkillCard title="Currently Studing" description="현재 공부하고 있는 언어와 기술들입니다." tags={[
+                <SkillCard title="Currently Studying" description="현재 공부하고 있는 언어와 기술들입니다." tags={[
                     { name: "Rust", bgColor: "bg-[#B7410E]", textColor: "text-white" },
                     { name: "Tauri", bgColor: "bg-[#24C8D8]", textColor: "text-black" },
                     { name: "Kubernetes", bgColor: "bg-[#326CE5]", textColor: "text-white" },

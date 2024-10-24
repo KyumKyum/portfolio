@@ -12,8 +12,8 @@ import SimpleProjectCard from "./SimpleProjectCard";
 function Projects() {
     return (
         <div className="flex h-screen flex-col justify-center p-8 bg-black">
-            <span className="w-full text-center text-4xl font-FS text-white my-10">
-                Let Me Introduce My Projects & Works!
+            <span className="w-full text-center text-5xl font-FS text-white my-10">
+                Projects & Works
             </span>
             <div className="flex flex-wrap justify-center gap-6 mb-10">
                 <ProjectCard cardImageUrl={Mohey} title="Mohey (모헤이)" description={"외국인 유학생들과 한국인 대학생들을 대상으로 한 창업 활동"} tags={[

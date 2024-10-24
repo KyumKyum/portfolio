@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 function ProjectCard({ cardImageUrl, title, description, tags }: ProjectCardProps) {
     return (
-        <button type="button" className="transition ease-in-out delay-150 flex flex-col w-[200px] h-[300px] bg-stone-300 shadow-sm rounded-lg hover:scale-110">
+        <button type="button" className="transition ease-in-out delay-150 flex flex-col w-[200px] h-[300px] bg-stone-100 shadow-sm rounded-lg hover:scale-110">
             <div className={"flex justify-center items-center w-full h-2/6 bg-white rounded-t-lg"}>
                 <img src={cardImageUrl} alt="banner" className="w-1/2 h-1/2 object-contain rounded-t-lg" />
             </div>
