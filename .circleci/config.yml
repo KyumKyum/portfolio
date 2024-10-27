@@ -35,7 +35,7 @@ jobs:
           command: echo -e "$SSH_PRIVATE_KEY | base64 --decode" > ~/ssh_key.pem
       - run:
           name: Set file permissions
-          command: chmod 600 ~/ssh_key.pem
+          command: chmod 400 ~/ssh_key.pem
       - run:
           name: Deploy to Azure
           command: 
