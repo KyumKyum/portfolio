@@ -32,8 +32,8 @@ jobs:
       - azure-cli/install
       - run:
           name: Deploy to Azure
-          command: 
-            ssh -o StrictHostKeyChecking=no kyum@kyumericano.space 'cd portfolio && git pull && docker build -t portfolio . && docker stop portfolio && docker rm portfolio && docker run --name=portfolio -p 4000:15623 -d portfolio'
+          command: |
+            ssh -o StrictHostKeyChecking=no $SSH_NAME@$SSH_HOST 'cd portfolio && git pull && docker build -t portfolio . && docker stop portfolio && docker rm portfolio && docker run --name=portfolio -p $EXTERNAL_PORT:$INTERNAL_PORT -d portfolio'
 
 workflows:
   build:
