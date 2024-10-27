@@ -1,12 +1,12 @@
-# This config was automatically generated from your source code
-# Stacks detected: deps:node:.,package_manager:yarn:
 version: 2.1
+
 orbs:
-  node: circleci/node@5
+  node: circleci/node@6.3.0
+  azure-cli: circleci/azure-cli@1.2.2
+
 jobs:
   build-node:
-    # Build node project
-    executor: node/default
+    executor: node/default # Use Default node executor, Change if it is required.
     steps:
       - checkout
       - node/install-packages:
@@ -23,19 +23,32 @@ jobs:
       - store_artifacts:
           path: ~/artifacts
           destination: node-build
-  deploy:
-    # This is an example deploy job, not actually used by the workflow
+
+  deploy: #TODO
     docker:
       - image: cimg/base:stable
     steps:
-      # Replace this with steps to deploy to users
+      - checkout
+      - azure-cli/install
       - run:
-          name: deploy
-          command: '#e.g. ./deploy.sh'
+          name: Install SSH key
+          command: echo -e "$SSH_PRIVATE_KEY" > ~/ssh_key.pem
+      - run:
+          name: Set file permissions
+          command: chmod 600 ~/ssh_key.pem
+      - run:
+          name: Deploy to Azure
+          command: 
+            ssh -o StrictHostKeyChecking=no -i ~/ssh_key.pem kyum@kyum.koreacentral.cloudapp.azure.com 'cd portfolio && git pull && docker build -t portfolio . && docker stop portfolio && docker rm portfolio && docker run --name=portfolio -p 4000:15623 -d portfolio'
+
 workflows:
   build:
     jobs:
       - build-node
-    # - deploy:
-    #     requires:
-    #       - build-node
+      - deploy:
+          requires:
+            - build-node
+          filters:
+            branches:
+              only:
+                - main
