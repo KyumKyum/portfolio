@@ -5,7 +5,7 @@ orbs:
   azure-cli: circleci/azure-cli@1.2.2
 
 jobs:
-  build-node:
+  build-app:
     executor: node/default # Use Default node executor, Change if it is required.
     steps:
       - checkout
@@ -24,7 +24,7 @@ jobs:
           path: ~/artifacts
           destination: node-build
 
-  deploy: #TODO
+  deploy-app: #TODO
     docker:
       - image: cimg/base:stable
     steps:
@@ -33,15 +33,15 @@ jobs:
       - run:
           name: Deploy to Azure
           command: |
-            ssh -o StrictHostKeyChecking=no $SSH_NAME@$SSH_HOST 'cd portfolio && git pull && docker build -t portfolio . && docker stop portfolio && docker rm portfolio && docker run --name=portfolio -p $EXTERNAL_PORT:$INTERNAL_PORT -d portfolio'
+            ssh -o StrictHostKeyChecking=no $SSH_NAME@$SSH_HOST 'cd portfolio && git pull && docker build -t portfolio . && docker stop portfolio && docker rm portfolio && docker run --name=portfolio -p ${EXTERNAL_PORT}:${INTERNAL_PORT} -d portfolio'
 
 workflows:
   build:
     jobs:
-      - build-node
-      - deploy:
+      - build-app
+      - deploy-app:
           requires:
-            - build-node
+            - build-app
           filters:
             branches:
               only:
