@@ -31,12 +31,9 @@ jobs:
       - checkout
       - azure-cli/install
       - run:
-          name: Set file permissions
-          command: chmod 400 ~/id_kyum.pem
-      - run:
           name: Deploy to Azure
           command: 
-            ssh -o StrictHostKeyChecking=no -i ~/id_kyum.pem kyum@kyumericano.space 'cd portfolio && git pull && docker build -t portfolio . && docker stop portfolio && docker rm portfolio && docker run --name=portfolio -p 4000:15623 -d portfolio'
+            ssh -o StrictHostKeyChecking=no kyum@kyumericano.space 'cd portfolio && git pull && docker build -t portfolio . && docker stop portfolio && docker rm portfolio && docker run --name=portfolio -p 4000:15623 -d portfolio'
 
 workflows:
   build:
