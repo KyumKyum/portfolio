@@ -32,14 +32,14 @@ jobs:
       - azure-cli/install
       - run:
           name: Install SSH key
-          command: echo -e "$SSH_PRIVATE_KEY" > ~/ssh_key.pem
+          command: echo -e "$SSH_PRIVATE_KEY | base64 --decode" > ~/ssh_key.pem
       - run:
           name: Set file permissions
           command: chmod 600 ~/ssh_key.pem
       - run:
           name: Deploy to Azure
           command: 
-            ssh -o StrictHostKeyChecking=no -i ~/ssh_key.pem kyum@kyum.koreacentral.cloudapp.azure.com 'cd portfolio && git pull && docker build -t portfolio . && docker stop portfolio && docker rm portfolio && docker run --name=portfolio -p 4000:15623 -d portfolio'
+            ssh -o StrictHostKeyChecking=no -i ~/ssh_key.pem kyum@kyumericano.space 'cd portfolio && git pull && docker build -t portfolio . && docker stop portfolio && docker rm portfolio && docker run --name=portfolio -p 4000:15623 -d portfolio'
 
 workflows:
   build:
