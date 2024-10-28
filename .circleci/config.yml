@@ -33,7 +33,7 @@ jobs:
       - run:
           name: Deploy to Azure
           command: |
-            ssh -o StrictHostKeyChecking=no $SSH_NAME@$SSH_HOST 'docker stop portfolio && docker rm portfolio && cd portfolio && git pull && docker build -t portfolio . && docker run --name=portfolio -p 4000:15623 -d portfolio'
+            ssh -o StrictHostKeyChecking=no $SSH_NAME@$SSH_HOST 'cd portfolio && git pull && docker build -t portfolio . && docker run --name=portfolio -p 4000:15623 -d portfolio'
 
 workflows:
   build:
