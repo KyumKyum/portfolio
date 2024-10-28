@@ -1,50 +1,23 @@
-# React + TypeScript + Vite
+## 새로운 포트폴리오 블로그
+- 포트폴리오 정리가 필요하기도 하고, 이전에 만들었었던 포트폴리오 사이트가 안 예뻐서 새로 개발을 하려고 한다.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 기술 스택
+#### **프론트엔드**: 
+- **React** Framework을 사용하여 간단한 웹앱을 배포할 계획이다.
+- 이 기회에 에니메이션하고도 친해져 볼 생각이다. **Framer-motion**도 사용해보자.
 
-Currently, two official plugins are available:
+#### **백엔드**: 
+- 포트폴리오 블로그에 포스팅 기능과 방명록 기능을 붙일 예정은 없어서, 백엔드는 생각하지 않고 있다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### **인프라**: 
+- DevOps는 항상 감을 잃으면 안된다. 다시 감을 되찾고 공부할 겸 **CircleCI**를 활용해서 CI/CD 파이프라인을 구축해 볼 예정이다.
+- Apache는 아직 공부가 부족해서 **Nginx**를 사용하여 프록시를 달 예정이다.
 
-## Expanding the ESLint configuration
+#### **Cloud**: 
+- 지금까지 AWS만 사용해서 다른 클라우드도 시도해보고 싶은 느낌이 들었다. 
+- Digital Ocean을 쓰고 싶었는데...무슨 이유에서인지 가입부터 문제가 있었다. 고객센터에 문의를 넣다가 다음 기회를 생각하고 포기!
+- NCloud도 생각을 해보았는데, 이미 사형 선고를 받은 CentOS만 지원을 하더라... 이왕 개발하는거 레퍼런스가 많은 ubuntu 서버에서 개발을 해보고 싶다는 생각이 있었다. 정이 안가서 조금 만지작거리다가 포기!
+- 고민을 해본 후, **Microsoft Azure**로 결정을 하였다. 적당히 레퍼런스도 많고, 한번 사용해보고 싶었던 클라우드 플랫폼이었다. :)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+#### **Domain**:
+- [Hostinger](https://www.hostinger.kr/)에서 1달러 정도 주고 마음에 드는 도메인을 받았다! (https://www.kyumericano.space)
