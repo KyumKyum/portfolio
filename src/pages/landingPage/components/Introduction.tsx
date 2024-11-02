@@ -7,7 +7,7 @@ import IG from '../../../assets/IG.svg?react';
 
 function Introduction() {
     return (
-        <div className="flex h-screen flex-col justify-center items-center bg-slate-200">
+        <div className="flex h-screen flex-col justify-center items-center bg-slate-200 py-10">
             <span className="text-4xl font-FS text-black my-10">"A Developer Who Loves Developing ;)"</span>
             <img src={Myself} alt="Myself" className="w-1/5 rounded-full" />
             <span className="text-lg font-FS text-black my-4">

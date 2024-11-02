@@ -1,4 +1,4 @@
-import OnePageScrollComponent from '../../components/OnePageScrollComponent';
+import ProgressBarLayout from '../../layout/ProgressBarLayout';
 import Careers from './components/Careers';
 import Finale from './components/Finale';
 import Introduction from './components/Introduction';
@@ -9,7 +9,7 @@ import Title from './components/Title';
 function LandingPage() {
     return (
         <div className="wrapper">
-            <OnePageScrollComponent
+            <ProgressBarLayout
                 componentList={[
                     <Title key={'title'} />,
                     <Introduction key={'introduction'} />,

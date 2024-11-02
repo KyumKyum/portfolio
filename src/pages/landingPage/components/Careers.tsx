@@ -6,7 +6,7 @@ import Zkrypto from "../../../assets/zkrypto.png"
 
 function Careers() {
     return (
-        <div className="flex h-screen flex-col justify-center items-center bg-yellow-500">
+        <div className="flex flex-col justify-center items-center bg-yellow-500 py-10">
             <span className="w-full text-center text-5xl font-FS text-black my-4">
                 Careers
             </span>

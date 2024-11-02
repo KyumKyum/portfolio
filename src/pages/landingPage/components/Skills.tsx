@@ -2,7 +2,7 @@ import SkillCard from './SkillCard';
 
 function Skills() {
     return (
-        <div className="flex h-screen flex-col justify-center items-center bg-stone-800">
+        <div className="flex h-screen flex-col justify-center items-center bg-stone-800 py-10">
             <span className="w-full text-center text-5xl font-FS text-white my-10">Tech Stacks</span>
             <div className="flex flex-wrap justify-center gap-6 mb-10">
                 <SkillCard

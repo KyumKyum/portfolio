@@ -11,7 +11,7 @@ import SimpleProjectCard from './SimpleProjectCard';
 
 function Projects() {
     return (
-        <div className="flex h-screen flex-col justify-center p-8 bg-black">
+        <div className="flex h-screen flex-col justify-center p-8 bg-black py-10">
             <span className="w-full text-center text-5xl font-FS text-white my-10">Projects & Works</span>
             <div className="flex flex-wrap justify-center gap-6 mb-10">
                 <ProjectCard
