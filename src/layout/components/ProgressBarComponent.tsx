@@ -68,8 +68,8 @@ function ProgressBar({
         <text
           x="50%"
           y="50%"
-          dominant-baseline="middle"
-          text-anchor="middle"
+          dominantBaseline="middle"
+          textAnchor="middle"
           className="text-xs text-rose-700" // Apply bold font styling
           style={{ fill: '#c72c48', transform: 'rotate(90deg)', transformOrigin: 'center' }} // Rotate text to be horizontal
         >

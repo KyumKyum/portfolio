@@ -1,5 +1,3 @@
-import _ from 'lodash';
-
 interface SimpleProjectCardProps {
     cardImageUrl?: string;
     title?: string;

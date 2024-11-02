@@ -27,10 +27,10 @@ function CareerCard({ cardImageUrl, title, description, details }: CareerCardPro
                     {details &&
                         _.map(details, (detail) => {
                             return (
-                                <ul className="mb-2">
+                                <ul key={detail.title} className="mb-2">
                                     <li className="text-[14px] mx-1 font-Suit font-bold text-black">{detail.title}</li>
-                                    {_.map(detail.descriptions, (description) => {
-                                        return <li className="text-xs font-Suit text-slate-800">- {description}</li>;
+                                    {_.map(detail.descriptions, (description, index) => {
+                                        return <li key={index} className="text-xs font-Suit text-slate-800">- {description}</li>;
                                     })}
                                 </ul>
                             );

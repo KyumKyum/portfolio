@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import ScrollingText from '../../../components/ScrollingText';
-import IntroductionWords from '../constants/IntroductionTexts';
-import Arrow from '../../../assets/arrow.svg?react';
-import Background from '../../../assets/background.png';
-import BouncingComponent from '../../../components/BouncingComponent';
+import ScrollingText from '../../../../components/ScrollingText';
+import IntroductionWords from '../../constants/IntroductionTexts';
+import Arrow from '../../../../assets/arrow.svg?react';
+import Background from '../../../../assets/background.png';
+import BouncingComponent from '../../../../components/BouncingComponent';
 
 function Title() {
     return (
@@ -12,16 +12,16 @@ function Title() {
                 <motion.img
                     src={Background}
                     alt="Background"
-                    width={650}
-                    height={650}
+                    width={800}
+                    height={800}
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                     className="absolute top-0 left-0 object-cover z-0"
                 />
-                <p className="text-6xl text-black font-FS z-10">Hello There! 저는</p>
+                <p className=" text-[50px] text-black font-FS z-10">Hello There! 저는</p>
                 <ScrollingText
-                    className="text-6xl text-black font-FS z-10"
+                    className="text-[50px] text-black font-FS z-10"
                     words={IntroductionWords}
                     backText=" 개발자입니다. :)"
                 />

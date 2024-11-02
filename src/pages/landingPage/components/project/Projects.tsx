@@ -1,12 +1,12 @@
 import ProjectCard from './ProjectCard';
-import ProjectTags from '../constants/Tags';
-import Mohey from '../../../assets/mohey.png';
-import Holme from '../../../assets/holme.png';
-import Zkrypto from '../../../assets/zkrypto.png';
-import Honsool from '../../../assets/honsool.png';
-import Character from '../../../assets/character.png';
-import Niscord from '../../../assets/niscord.png';
-import Myself from '../../../assets/myself.jpg';
+import ProjectTags from '../../constants/Tags';
+import Mohey from '../../../../assets/mohey.png';
+import Holme from '../../../../assets/holme.png';
+import Zkrypto from '../../../../assets/zkrypto.png';
+import Honsool from '../../../../assets/honsool.png';
+import Character from '../../../../assets/character.png';
+import Niscord from '../../../../assets/niscord.png';
+import Myself from '../../../../assets/myself.jpg';
 import SimpleProjectCard from './SimpleProjectCard';
 
 function Projects() {

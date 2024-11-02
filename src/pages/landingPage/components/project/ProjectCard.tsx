@@ -1,6 +1,6 @@
 import _ from 'lodash';
-import { cls } from '../../../utils/cls';
-import type TagProps from '../interfaces/TagProps';
+import { cls } from '../.././../../utils/cls';
+import type TagProps from '../../interfaces/TagProps';
 
 interface ProjectCardProps {
     cardImageUrl?: string;

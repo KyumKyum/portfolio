@@ -1,12 +1,12 @@
 import CareerCard from "./CareerCard";
-import SellerNote from "../../../assets/sellernote.png"
-import Mohey from "../../../assets/mohey.png"
-import SnP from "../../../assets/snp.png"
-import Zkrypto from "../../../assets/zkrypto.png"
+import SellerNote from "../../../../assets/sellernote.png"
+import Mohey from "../../../../assets/mohey.png"
+import SnP from "../../../../assets/snp.png"
+import Zkrypto from "../../../../assets/zkrypto.png"
 
 function Careers() {
     return (
-        <div className="flex flex-col justify-center items-center bg-yellow-500 py-10">
+        <div className="flex min-h-svh flex-col justify-center items-center bg-yellow-500 py-10">
             <span className="w-full text-center text-5xl font-FS text-black my-4">
                 Careers
             </span>

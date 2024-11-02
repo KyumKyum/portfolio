@@ -18,7 +18,7 @@ const IntroductionWords: WordsProps[] = [
         color: 'text-[#FF9800]',
     },
     {
-        word: 'Cloud Platform',
+        word: 'Cloud',
         color: 'text-[#3F51B5]',
     },
     {

@@ -23,7 +23,7 @@ function ScrollingText({ className, scrollClassName, frontText, backText, words 
     }, [total]);
 
     return (
-        <div>
+        <div className='z-10'>
             <span className={className}>
                 {frontText}
                 <AnimatePresence mode="wait">
@@ -38,7 +38,7 @@ function ScrollingText({ className, scrollClassName, frontText, backText, words 
                         {words[index].word}
                     </motion.h1>
                 </AnimatePresence>
-                {backText}
+                <span>{backText}</span>
             </span>
         </div>
     );
