@@ -1,4 +1,3 @@
-import CareerCard from "./CareerCard";
 import SellerNote from "../../../../assets/sellernote.png"
 import Mohey from "../../../../assets/mohey.png"
 import SnP from "../../../../assets/snp.png"
