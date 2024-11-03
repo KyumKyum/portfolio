@@ -14,31 +14,29 @@ const ProgressBarLayout = observer(({ componentList, mobileComponentList }: Prog
     const [scrollProgress, setScrollProgress] = useState(0);
 
     useEffect(() => {
-        const wheelHandler = (e: WheelEvent) => {
-            e.preventDefault();
-            const { deltaY } = e;
+        const updateScrollProgress = () => {
             const top = wrapperRef.current?.scrollTop || 0;
             const pageHeight = wrapperRef.current?.scrollHeight || 1;
             const viewportHeight = window.innerHeight;
             const totalScrollableHeight = pageHeight - viewportHeight;
-            const newTop = top + (deltaY > 0 ? viewportHeight : -viewportHeight);
 
-            wrapperRef.current?.scrollTo({
-                top: newTop,
-                behavior: 'smooth',
-            });
-
-            const progress = Math.ceil((newTop / totalScrollableHeight) * 100);
+            const progress = Math.ceil((top / totalScrollableHeight) * 100);
             setScrollProgress(progress);
         };
 
         const wrapperRefCur = wrapperRef.current;
-        wrapperRefCur?.addEventListener('wheel', wheelHandler);
+
+        wrapperRefCur?.addEventListener('scroll', updateScrollProgress);
+
+        updateScrollProgress();
 
         return () => {
-            wrapperRefCur?.removeEventListener('wheel', wheelHandler);
+            wrapperRefCur?.removeEventListener('scroll', updateScrollProgress);
         };
     }, []);
+
+
+
 
     const activeComponentList = viewportStore.width < 760 ? mobileComponentList : componentList;
 
