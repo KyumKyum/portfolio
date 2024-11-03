@@ -102,9 +102,6 @@ function MDescriptionMohey() {
             </div>
             <div className="flex flex-col w-full px-10 mb-8">
                 <div className="font-Suit mb-8 text-center">
-                    <p className="font-Suit text-2xl mb-8">
-                        프로젝트 요약: <span className="text-[#FF9800]">개발 총괄 및 CTO</span>
-                    </p>
                     <div className="flex justify-center items-center mb-8">
                         <img
                             src={Banner}
@@ -112,6 +109,9 @@ function MDescriptionMohey() {
                             width={300}
                         />
                     </div>
+                    <p className="font-Suit mb-8 text-center">
+                        프로젝트 요약: <span className="text-[#FF9800]">개발 총괄 및 CTO</span>
+                    </p>
                     <span className="font-Suit text-xs mb-6 text-center">
                         <ul>
                             <li>{'\u2022 CircleCI 활용 CI/CD 파이프라인 구축'}</li>
