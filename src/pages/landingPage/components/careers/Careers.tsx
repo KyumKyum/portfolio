@@ -36,7 +36,7 @@ function Careers() {
                     {
                         title: "배포 및 인프라 개발",
                         descriptions: [
-                            "Docker 활용 AWS EC2에 배포",
+                            "Docker Compose 활용 AWS EC2에 배포",
                             "Nginx, Certbot 활용 리버스 프록시 및 https 설정 경험",
                         ]
                     },

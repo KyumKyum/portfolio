@@ -1,16 +1,14 @@
-import ScramblingText from "../../components/ScramblingText";
+import { observer } from "mobx-react";
+import viewportStore from "../../store/ViewportStore";
+import DescriptionMohey from "./DescriptionMohey";
+import MDescriptionMohey from "./MDescriptionMohey";
 
-function MoheyPage() {
+const MoheyPage = observer(() => {
     return (
-        <div className="wrapper h-svh flex flex-col bg-stone-100">
-            <div className="w-full flex justify-center items-center m-10">
-                <ScramblingText
-                    className="text-6xl font-GW text-[#007FFC]"
-                    text="Mohey! 모헤이!"
-                />
-            </div>
+        <div className="wrapper bg-[#007FFC]">
+            {viewportStore.width > 760 ? <DescriptionMohey /> : <MDescriptionMohey />}
         </div>
     );
-}
+})
 
 export default MoheyPage;

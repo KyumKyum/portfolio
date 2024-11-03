@@ -17,7 +17,7 @@ function MProjects() {
                 <ProjectCard
                     cardImageUrl={Mohey}
                     title="Mohey (모헤이)"
-                    description={'외국인 유학생들과 한국인 대학생들을 대상으로 한 창업 활동'}
+                    description={'국내 거주 외국인, 한국인 대상 관심사 기반 모임 플랫폼 창업 활동'}
                     tags={[
                         ProjectTags.FullStack,
                         ProjectTags.DevOps,

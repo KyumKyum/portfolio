@@ -7,7 +7,7 @@ export default {
         extend: {
             fontFamily: {
                 FS: 'FS',
-                Flight: 'Flight',
+                Watermelon: 'Watermelon',
                 Suit: 'Suit',
                 GW: 'GW',
             },
