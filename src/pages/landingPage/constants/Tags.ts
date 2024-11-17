@@ -37,7 +37,8 @@ const ProjectTags: Record<string, TagProps> = {
         bgColor: 'bg-yellow-100',
         textColor: 'text-yellow-800',
     },
-    NFC: { name: 'NFC', bgColor: 'bg-indigo-100', textColor: 'text-indigo-800' },
+    Blockchain: { name: '블록체인', bgColor: 'bg-indigo-100', textColor: 'text-indigo-800' },
+    ZKP: { name: 'ZKP', bgColor: 'bg-sky-100', textColor: 'text-sky-800' },
 };
 
 export default ProjectTags;

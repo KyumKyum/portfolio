@@ -2,17 +2,18 @@ import ProjectCard from './ProjectCard';
 import ProjectTags from '../../constants/Tags';
 import Mohey from '../../../../assets/mohey.png';
 import Holme from '../../../../assets/holme.png';
-import Zkrypto from '../../../../assets/zkrypto.png';
 import Honsool from '../../../../assets/honsool.png';
 import Character from '../../../../assets/character.png';
 import Niscord from '../../../../assets/niscord.png';
 import Myself from '../../../../assets/myself.jpg';
 import SimpleProjectCard from './SimpleProjectCard';
+import ShieldBid from '../../../../assets/shieldbid.png';
 
 function Projects() {
     return (
         <div className="flex h-screen flex-col justify-center p-8 bg-black py-10">
-            <span className="w-full text-center text-5xl font-FS text-white my-10">Projects & Works</span>
+            <span className="w-full text-center text-5xl font-FS text-white mb-4">My Projects</span>
+            <span className="w-full text-center text-xl font-Suit text-white mb-10">카드를 클릭하시면 프로젝트에 대한 설명을 보실 수 있습니다. :)</span>
             <div className="flex flex-wrap justify-center gap-6 mb-10">
                 <ProjectCard
                     cardImageUrl={Mohey}
@@ -34,17 +35,20 @@ function Projects() {
                     title="HOLME (홂)"
                     description={'MATTER 기반 숙박 시설용 스마트 홈 설정 마이그레이션 서비스'}
                     tags={[ProjectTags.FullStack, ProjectTags.Architectures, ProjectTags.MSA, ProjectTags.Awards]}
+                    cb={() => {
+                        window.location.assign("/holme");
+                    }}
                 />
                 <ProjectCard
-                    cardImageUrl={Zkrypto}
-                    title="Zkrypto & SnP Lab"
-                    description={'NFC 기능 및 대용량 알림 서비스를 개발한 연구 활동'}
+                    cardImageUrl={ShieldBid}
+                    title="ShieldBid"
+                    description={'블록체인과 영지식 증명 기반 온라인 경매 서비스'}
                     tags={[
                         ProjectTags.Backend,
-                        ProjectTags.NFC,
-                        ProjectTags.Architectures,
                         ProjectTags.MSA,
-                        ProjectTags.Traffics,
+                        ProjectTags.Architectures,
+                        ProjectTags.Blockchain,
+                        ProjectTags.ZKP
                     ]}
                 />
             </div>
