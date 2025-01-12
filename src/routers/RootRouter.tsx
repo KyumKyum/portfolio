@@ -3,6 +3,7 @@ import LandingPage from '../pages/landingPage/LandingPage';
 import MoheyPage from '../pages/moheyPage/MoheyPage';
 import HolmePage from '../pages/holmePage/HolmePage';
 import ShieldBidPage from '../pages/shieldBidPage/ShieldBidPage';
+import FloweryPage from '../pages/floweryPage/FloweryPage';
 
 function RootRouter() {
     return (
@@ -12,6 +13,7 @@ function RootRouter() {
                 <Route path="/mohey" element={<MoheyPage />} />
                 <Route path="/holme" element={<HolmePage />} />
                 <Route path="/shieldbid" element={<ShieldBidPage />} />
+                <Route path="/flowery" element={<FloweryPage />} />
             </Routes>
         </BrowserRouter>
     );

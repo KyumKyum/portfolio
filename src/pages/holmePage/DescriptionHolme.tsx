@@ -125,7 +125,7 @@ function DescriptionHolme() {
                     window.open("https://flame-sun-524.notion.site/HOLME-d41cf1a8e87b4c71b638a93c58ca63f2", "_blank")
                 }}>
                     <p className="font-Suit text-2xl mb-8">
-                        프로젝트에 대한 자세한 설명과 시연 영상은 <span className="text-[#A6093A]">테크 블로그에</span> 있습니다! :)
+                        프로젝트에 대한 자세한 설명과 시연 영상은 <span className="text-[#A6093A] border-b-[1px] border-[#A6093A]">테크 블로그에</span> 있습니다! :)
                     </p>
                 </button>
             </div>

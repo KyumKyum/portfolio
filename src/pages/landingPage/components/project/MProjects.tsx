@@ -50,6 +50,9 @@ function MProjects() {
                         ProjectTags.Blockchain,
                         ProjectTags.ZKP
                     ]}
+                    cb={() => {
+                        window.location.assign("/flowery");
+                    }}
                 />
             </div>
             <div className="flex flex-wrap justify-center gap-6">

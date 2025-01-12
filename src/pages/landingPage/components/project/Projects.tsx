@@ -67,6 +67,9 @@ function Projects() {
                         ProjectTags.Architectures
                     
                     ]}
+                    cb={() => {
+                        window.location.assign("/flowery");
+                    }}
                 />
             </div>
             <div className="flex flex-wrap justify-center gap-6">
