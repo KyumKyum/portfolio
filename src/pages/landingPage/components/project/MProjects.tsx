@@ -8,6 +8,7 @@ import Character from '../../../../assets/character.png';
 import Niscord from '../../../../assets/niscord.png';
 import Myself from '../../../../assets/myself.jpg';
 import SimpleProjectCard from './SimpleProjectCard';
+import Joseph from '../../../../assets/joseph.png';
 
 function MProjects() {
     return (
@@ -82,6 +83,14 @@ function MProjects() {
                     description="게임 채팅을 학습하여 채팅의 유독성을 측정하는 머신 러닝 모델"
                     cb={() => {
                         window.open('https://kyumkyum.github.io/gamechatban.github.io/', '_blank');
+                    }}
+                />
+                <SimpleProjectCard
+                    cardImageUrl={Joseph}
+                    title="Christian People"
+                    description="본인의 개신교 신앙과 성격이 어떤 성경 인물과 닮았는지 알려주는 서비스"
+                    cb={() => {
+                        // window.open('', '_blank');
                     }}
                 />
             </div>

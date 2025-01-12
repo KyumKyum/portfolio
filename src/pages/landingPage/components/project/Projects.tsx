@@ -8,6 +8,8 @@ import Niscord from '../../../../assets/niscord.png';
 import Myself from '../../../../assets/myself.jpg';
 import SimpleProjectCard from './SimpleProjectCard';
 import ShieldBid from '../../../../assets/shieldbid.png';
+import Flowery from '../../../../assets/flowery.png';
+import Joseph from '../../../../assets/joseph.png';
 
 function Projects() {
     return (
@@ -50,6 +52,21 @@ function Projects() {
                         ProjectTags.Blockchain,
                         ProjectTags.ZKP
                     ]}
+                    cb={() => {
+                        window.location.assign("/shieldbid");
+                    }}
+                />
+                <ProjectCard
+                    cardImageUrl={Flowery}
+                    title="Flowery"
+                    description={'모든 할 일을 완료하여 꽃을 피우는 해빗 트래커 서비스'}
+                    tags={[
+                        ProjectTags.Backend,
+                        ProjectTags.MSA,
+                        ProjectTags.Leading,
+                        ProjectTags.Architectures
+                    
+                    ]}
                 />
             </div>
             <div className="flex flex-wrap justify-center gap-6">
@@ -83,6 +100,14 @@ function Projects() {
                     description="게임 채팅을 학습하여 채팅의 유독성을 측정하는 머신 러닝 모델"
                     cb={() => {
                         window.open('https://kyumkyum.github.io/gamechatban.github.io/', '_blank');
+                    }}
+                />
+                <SimpleProjectCard
+                    cardImageUrl={Joseph}
+                    title="Christian People"
+                    description="본인의 개신교 신앙과 성격이 어떤 성경 인물과 닮았는지 알려주는 서비스"
+                    cb={() => {
+                        // window.open('', '_blank');
                     }}
                 />
             </div>

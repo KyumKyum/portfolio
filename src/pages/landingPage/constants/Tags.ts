@@ -39,6 +39,7 @@ const ProjectTags: Record<string, TagProps> = {
     },
     Blockchain: { name: '블록체인', bgColor: 'bg-indigo-100', textColor: 'text-indigo-800' },
     ZKP: { name: 'ZKP', bgColor: 'bg-sky-100', textColor: 'text-sky-800' },
+    Leading: { name: '프로젝트 리딩', bgColor: 'bg-amber-100', textColor: 'text-amber-800'}
 };
 
 export default ProjectTags;
