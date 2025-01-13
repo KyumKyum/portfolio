@@ -75,9 +75,6 @@ function Careers() {
                             "Fire & Forget 전략과 분산락 활용 TPS 7K 이상 감당 가능한 서버 구조 개발",
                         ]
                     },
-                    {
-                        title: "자세한 활동은 Projects & Works를 확인해주세요!"
-                    }
                 ]} />
             </div>
         </div>
