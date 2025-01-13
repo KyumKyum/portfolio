@@ -11,7 +11,7 @@ function Skills() {
                     tags={[
                         { name: 'Typescript', bgColor: 'bg-[#007ACC]', textColor: 'text-white' },
                         { name: 'Kotlin', bgColor: 'bg-[#B125EA]', textColor: 'text-white' },
-                        // { name: "Java", bgColor: "bg-[#F89820]", textColor: "text-black" },
+                        { name: "Java", bgColor: "bg-[#F89820]", textColor: "text-black" },
                         { name: 'Go', bgColor: 'bg-[#00ADD8]', textColor: 'text-white' },
                     ]}
                 />
@@ -35,12 +35,13 @@ function Skills() {
                 />
                 <SkillCard
                     title="Backend"
-                    description="뱍앤드 개발 시 사용하는 프레임워크입니다."
+                    description="백앤드 개발 시 사용하는 프레임워크입니다."
                     tags={[
                         { name: 'Express', bgColor: 'bg-[#000000]', textColor: 'text-white' },
                         { name: 'NestJS', bgColor: 'bg-[#E0243E]', textColor: 'text-white' },
                         { name: 'Spring Boot', bgColor: 'bg-[#6DB33F]', textColor: 'text-black' },
                         { name: 'Ktor', bgColor: 'bg-[#087CFA]', textColor: 'text-white' },
+                        { name: 'Gin', bgColor: 'bg-[#3698a6]', textColor: 'text-white'}
                     ]}
                 />
             </div>
@@ -80,11 +81,11 @@ function Skills() {
                     description="현재 공부하고 있는 언어와 기술들입니다."
                     tags={[
                         { name: 'Rust', bgColor: 'bg-[#B7410E]', textColor: 'text-white' },
-                        { name: 'Tauri', bgColor: 'bg-[#24C8D8]', textColor: 'text-black' },
                         { name: 'Kubernetes', bgColor: 'bg-[#326CE5]', textColor: 'text-white' },
                         { name: 'Istio', bgColor: 'bg-[#466BB0]', textColor: 'text-white' },
                         { name: 'Ansible', bgColor: 'bg-[#000000]', textColor: 'text-white' },
                         { name: 'ArgoCD', bgColor: 'bg-[#EF7B4D]', textColor: 'text-black' },
+                        { name: 'ELK', bgColor: 'bg-[#00BFB3]', textColor: 'text-black'},
                         { name: 'Apache Kafka', bgColor: 'bg-[#231F20]', textColor: 'text-white' },
                     ]}
                 />

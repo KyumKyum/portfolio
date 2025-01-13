@@ -110,7 +110,7 @@ function Projects() {
                     title="Christian People"
                     description="본인의 개신교 신앙과 성격이 어떤 성경 인물과 닮았는지 알려주는 서비스"
                     cb={() => {
-                        // window.open('', '_blank');
+                        window.open('https://www.christianpeople.site/', '_blank');
                     }}
                 />
             </div>
