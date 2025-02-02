@@ -63,6 +63,7 @@ function MSkills() {
                         { name: 'CircleCI', bgColor: 'bg-[#343434]', textColor: 'text-white' },
                         { name: 'Prometheus', bgColor: 'bg-[#E6522C]', textColor: 'text-white' },
                         { name: 'Grafana', bgColor: 'bg-[#F46800]', textColor: 'text-black' },
+                        { name: 'ELK', bgColor: 'bg-[#00BFB3]', textColor: 'text-black'},
                     ]}
                 />
                 <SkillCard
@@ -85,7 +86,6 @@ function MSkills() {
                         { name: 'Istio', bgColor: 'bg-[#466BB0]', textColor: 'text-white' },
                         { name: 'Ansible', bgColor: 'bg-[#000000]', textColor: 'text-white' },
                         { name: 'ArgoCD', bgColor: 'bg-[#EF7B4D]', textColor: 'text-black' },
-                        { name: 'ELK', bgColor: 'bg-[#00BFB3]', textColor: 'text-black'},
                         { name: 'Apache Kafka', bgColor: 'bg-[#231F20]', textColor: 'text-white' },
                     ]}
                 />

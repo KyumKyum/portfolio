@@ -64,11 +64,11 @@ function MDescriptionFlowery() {
                     <ul>
                             <li>{'\u2022 Flowery 서비스 기획'}</li>
                             <li>{'\u2022 Flowery MSA 구조 설계 및 팀 별 업무 할당'}</li>
-                            <li>{'\u2022 Flowery ERD 설계'}</li>
                             <li>{'\u2022 Kotlin 활용 마이크로서비스들의 보일러플레이팅 진행'}</li>
                             <li>{'\u2022 Kotlin, RabbitMQ 활용 CQRS 데이터베이스 서버 구조 설계 및 개발'}</li>
                             <li>{'\u2022 Go 활용 팔로잉/팔로워 GDB 서버 구조 설계 및 개발'}</li>
-                            <li>{'\u2022 Slack, Jira를 활용 커뮤니케이션 코스트 감소'}</li>
+                            <li>{'\u2022 ELK 기술 스택, Filebeat 활용 로그 수집 및 시각화'}</li>
+                            <li>{'\u2022 Prometheus & Grafana 활용 이벤트 모니터링 및 정보 시각화'}</li>
                         </ul>
                     </span>
                 </div>

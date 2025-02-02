@@ -92,7 +92,7 @@ function MDescriptionShieldBid() {
                     window.open("https://github.com/KyumKyum/ShieldBid", "_blank")
                 }}>
                     <p className="font-Suit text-sm">
-                        프로젝트에 대한 코드는 <span className="text-blue-950">Github</span>에 있습니다! :)
+                        프로젝트에 대한 코드는 <span className="text-blue-950 border-b-2 border-blue-950">Github</span>에 있습니다! :)
                     </p>
                     <p className="font-Suit text-[10px] mb-8">
                         (함께 개발을 진행한 팀원의 부탁으로 백엔드 코드만들 공개합니다.)

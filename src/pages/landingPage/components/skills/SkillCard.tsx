@@ -12,7 +12,7 @@ function SkillCard({ title, description, tags }: SkillCardProps) {
     return (
         <button
             type="button"
-            className="transition ease-in-out delay-150 flex flex-col w-[200px] h-[250px] bg-stone-100 shadow-sm rounded-lg hover:scale-110"
+            className="transition ease-in-out delay-150 flex flex-col w-[200px] h-[250px] bg-stone-100 shadow-sm rounded-lg"
         >
             <div className="h-full flex flex-col justify-evenly p-4">
                 <div>
