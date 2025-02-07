@@ -11,7 +11,7 @@ function Careers() {
                 Careers
             </span>
             <div className="flex flex-wrap justify-center items-center w-full h-full gap-6 m-4">
-                <CareerCard cardImageUrl={SellerNote} title="(주) 셀러노트" description="백엔드 인턴, 2020.12 ~ 2021.02" details={[
+                <CareerCard cardImageUrl={SellerNote} title="(주) 셀러노트" description="백엔드 인턴, 2021.01 ~ 2021.02" details={[
                     {
                         title: "챗봇 백엔드 서버 개발", descriptions: [
                             "Go 활용 물류 분류 로직 및 벡엔드 서버 개발",

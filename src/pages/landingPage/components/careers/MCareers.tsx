@@ -11,7 +11,7 @@ function MCareers() {
                 Careers
             </span>
             <div className="flex flex-wrap justify-center items-center w-full h-full gap-6 m-4">
-                <MCareerCard cardImageUrl={SellerNote} title="(주) 셀러노트" description="백엔드 인턴, 2020.12 ~ 2021.02" details={[
+                <MCareerCard cardImageUrl={SellerNote} title="(주) 셀러노트" description="백엔드 인턴, 2021.01 ~ 2021.02" details={[
                     {
                         title: "챗봇 백엔드 서버 개발", descriptions: [
                             "Go 활용 물류 분류 로직 및 벡엔드 서버 개발",
@@ -75,9 +75,6 @@ function MCareers() {
                             "Fire & Forget 전략과 분산락 활용 TPS 7K 이상 감당 가능한 서버 구조 개발",
                         ]
                     },
-                    {
-                        title: "자세한 활동은 Projects & Works를 확인해주세요!"
-                    }
                 ]} />
             </div>
         </div>
