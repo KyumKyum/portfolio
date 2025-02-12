@@ -81,7 +81,6 @@ function MDescriptionShieldBid() {
                             <li>{'\u2022 Ethers 활용 이더리움 네트워크 상 로직 개발'}</li>
                             <li>{'\u2022 Caching 활용 서비스간 latency 최소화'}</li>
                             <li>{'\u2022 Shell Script 활용 Contract 배포 코드 자동화'}</li>
-                            <li>{'\u2022 Flask 활용 NUGU AI Speaker 통신을 위한 인터페이스 게이트웨이 개발'}</li>
                         </ul>
                     </span>
                 </div>

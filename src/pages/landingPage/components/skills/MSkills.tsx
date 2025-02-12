@@ -72,7 +72,6 @@ function MSkills() {
                     tags={[
                         { name: 'Redis', bgColor: 'bg-[#D82C20]', textColor: 'text-white' },
                         { name: 'GraphQL', bgColor: 'bg-[#E10098]', textColor: 'text-white' },
-                        { name: 'Trpc', bgColor: 'bg-[#2596BE]', textColor: 'text-white' },
                         { name: 'Grpc', bgColor: 'bg-[#244B5A]', textColor: 'text-white' },
                         { name: 'RabbitMQ', bgColor: 'bg-[#FF6600]', textColor: 'text-black' },
                     ]}

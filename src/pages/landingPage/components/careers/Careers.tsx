@@ -25,7 +25,7 @@ function Careers() {
                         ]
                     }
                 ]} />
-                <CareerCard cardImageUrl={Mohey} title="Mohey, 모헤이" description="CTO, 2022.09 ~ 2023.12" details={[
+                <CareerCard cardImageUrl={Mohey} title="Mohey, 모헤이" description="CTO, 2022.10 ~ 2023.12" details={[
                     {
                         title: "서버 구조 설계 및 개발 총괄",
                         descriptions: [
